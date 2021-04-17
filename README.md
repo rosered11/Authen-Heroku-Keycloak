@@ -1,6 +1,17 @@
 # Authen-Heroku-Keycloak
 Implement authentication on Heroku and use Keycloak
 
+## Guide
+
+### Heroku
+
+When you deploy app on Heroku. you should scal dynose for running your application. If you not setting it. Your application will be not running.
+
+This is example command for scale dynose
+```
+heroku ps:scale web=1
+```
+
 ## Reference 
 
 - [Authentication](https://github.com/rosered11/authentication)
