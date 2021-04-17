@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  psgs:
+    image: postgres:13.2
+    environment:
+      - ACCEPT_EULA=Y
+      - POSTGRES_PASSWORD=P@ssword2
+    network_mode: bridge
+    ports:
+      - 5432:5432
+    restart: always
