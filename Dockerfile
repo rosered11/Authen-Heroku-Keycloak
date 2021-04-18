@@ -3,4 +3,4 @@ ENV ASPNETCORE_ENVIRONMENT=Development
 
 ADD publish/ app/
 WORKDIR /app
-ENTRYPOINT ["dotnet", "Authentication.dll"]
+CMD dotnet Authentication.dll --urls=http://*:$PORT
