@@ -10,4 +10,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=build app/publish .
 
-RUN dotnet Authentication.dll --urls=http://*:$PORT
+CMD dotnet Authentication.dll --urls=http://*:$PORT
